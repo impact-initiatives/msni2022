@@ -143,6 +143,15 @@ test_that("Inputing wrong values (0 or above 5)", {
                         crit_to_3 = c("crit1_3"),
                         non_crit = "crit1_nc"),
                "Cannot have values equals to 0")
+  dataframe_for_test <- data.frame(crit1_4plus = 0,
+                                   crit1_4 = 4,
+                                   crit1_3 = 2,
+                                   crit1_nc = 1)
+  expect_equal(make_lsg(dataframe_for_test,
+                        crit_to_4 = c("crit1_4"),
+                        crit_to_3 = c("crit1_3"),
+                        non_crit = "crit1_nc"),
+               4)
 
 
 })

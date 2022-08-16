@@ -1,7 +1,7 @@
 Package: msni2022
 Type: Package
 Title: Helper to calculate living standard gaps
-Version: 0.1.0
+Version: 1.0.0
 Author: Yann Say-Liang-Fat
 Maintainer: Yann Say-Liang-Fat <yann.say@impact-initiatives.org>
 Description: Helpers functions to calculate the LSG with missing values.
