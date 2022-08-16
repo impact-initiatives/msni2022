@@ -80,7 +80,7 @@ make_single_lsg <- function(dataset,
   if(any(sapply(dataset[indicator_to_select], function(xx) !is.numeric(xx)))) {
     stop("all columns must be numeric")
   }
-  if(sum(dataset == 0, na.rm = T) > 0) {
+  if(sum(dataset[indicator_to_select] == 0, na.rm = T) > 0) {
     stop("Cannot have values equals to 0")
   }
 
