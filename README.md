@@ -2,6 +2,8 @@
 # msni2022
 
 <!-- badges: start -->
+[![check-standard](https://github.com/impact-initiatives/msni2022/actions/workflows/check-standard.yaml/badge.svg)](https://github.com/impact-initiatives/msni2022/actions/workflows/check-standard.yaml)
+[![test-coverage](https://github.com/impact-initiatives/msni2022/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/impact-initiatives/msni2022/actions/workflows/test-coverage.yaml)
 <!-- badges: end -->
 
 The goal of msni2022 is to help create the Living Standard Gaps for the Multi Sector Needs Index

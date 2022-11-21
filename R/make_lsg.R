@@ -17,12 +17,11 @@
 #'          non_crit = "crit1_nc")
 #'
 
-make_lsg <- function(
-    dataset = dataset,
-    crit_to_4plus = NULL,
-    crit_to_4 = NULL,
-    crit_to_3 = NULL,
-    non_crit = NULL) {
+make_lsg <- function(dataset = dataset,
+                     crit_to_4plus = NULL,
+                     crit_to_4 = NULL,
+                     crit_to_3 = NULL,
+                     non_crit = NULL) {
 
   #if there is at least a 4+ score indicator
   if(!is.null(crit_to_4plus)) {

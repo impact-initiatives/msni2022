@@ -152,7 +152,25 @@ test_that("Inputing wrong values (0 or above 5)", {
                         crit_to_3 = c("crit1_3"),
                         non_crit = "crit1_nc"),
                4)
+})
 
+test_that("Inputing wrong values (5 when only indicators to 4)", {
+  dataframe_for_test <- data.frame(crit1_4 = 4,
+                                   crit1_3 = 5,
+                                   crit1_nc = 1)
+  expect_error(make_lsg(dataframe_for_test,
+                        crit_to_4 = c("crit1_4"),
+                        crit_to_3 = c("crit1_3"),
+                        non_crit = "crit1_nc"),
+               "You don't have 4\\+ indicators, values cannot be above 4")
+})
 
+test_that("Inputing wrong values (4 when only indicators to 3)", {
+  dataframe_for_test <- data.frame(crit1_3 = 5,
+                                   crit1_nc = 1)
+  expect_error(make_lsg(dataframe_for_test,
+                        crit_to_3 = c("crit1_3"),
+                        non_crit = "crit1_nc"),
+               "You don't have indicators scoring 4, values cannot be above 3")
 })
 
